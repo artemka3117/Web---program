@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 1 - Простий список задач</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Простий список задач</h1>
+        
+        <div class="input-container">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Введіть нову задачу..." 
+                class="task-input"
+            >
+            <button id="addBtn" class="add-btn">Додати</button>
+        </div>
+
+        <ul id="taskList" class="task-list">
+            <!-- Задачи будуть додаватись сюди -->
+        </ul>
+
+        <div class="stats">
+            <span>Всього: <span id="totalTasks">0</span></span>
+            <span>Виконано: <span id="completedTasks">0</span></span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

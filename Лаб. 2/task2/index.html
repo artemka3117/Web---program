@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 2 - Розширений список завдань</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✅ Розширений список завдань</h1>
+        
+        <div class="input-container">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Введіть нову задачу..." 
+                class="task-input"
+            >
+            <button id="addBtn" class="add-btn">Додати</button>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="active">Активні</button>
+            <button class="filter-btn" data-filter="completed">Виконані</button>
+        </div>
+
+        <ul id="taskList" class="task-list">
+            <!-- Задачи будуть додаватись сюди -->
+        </ul>
+
+        <div class="stats">
+            <span>Всього: <span id="totalTasks">0</span></span>
+            <span>Активні: <span id="activeTasks">0</span></span>
+            <span>Виконано: <span id="completedTasks">0</span></span>
+        </div>
+    </div>
+
+    <!-- Модальне вікно для редагування -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Редагувати задачу</h2>
+            <input type="text" id="editInput" class="edit-input" placeholder="Введіть новий текст">
+            <div class="modal-buttons">
+                <button id="saveBtn" class="save-btn">Зберегти</button>
+                <button id="cancelBtn" class="cancel-btn">Скасувати</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
